@@ -6,8 +6,13 @@ title: Index page
 {% block content %}
 
 	{% include "partials/_header.html" %}
-	{% include "partials/_hero.html" %}
-	{% include "partials/_main.html" %}
+  <div class="line-container">
+    <div class="line-bg" style="background-image: url('img/line.png')"></div>
+    {% include "partials/_hero.html" %}
+    {% include "partials/_main.html" %}
+
+  </div>
+	{% include "partials/_banner.html" %}
 	{% include "partials/_footer.html" %}
 
 

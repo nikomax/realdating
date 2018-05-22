@@ -11,6 +11,10 @@
 		align-items: center
 	&__logo
 		margin-right: 73px
+		z-index: 2
+	&__burger
+		z-index: 2
+		position: relative
 
 .logo
 	display: block
@@ -23,9 +27,19 @@
 .burger
 	cursor: pointer
 	span
+		transition: 0.3s
 		height: 5px
 		width: 36px
 		background-color: #ffffff
 		display: block
 		&:not(:last-child)
 			margin-bottom: 6px
+	&.is-active
+		span
+			&:nth-child(1)
+				transform: translate(1px, 12px) rotate(45deg)
+			&:nth-child(2)
+				transform: translateX(100%)
+				opacity: 0
+			&:nth-child(3)
+				transform: translate(1px, -10px) rotate(-45deg)

@@ -3,6 +3,18 @@ body
 	+regular
 	color: #000
 
+.out
+	overflow-x: hidden
+	width: 100%
+	position: relative
+	&.is-hidden
+		position: fixed
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		overflow: hidden
+
 a
 	text-decoration: none
 	font-size: inherit
@@ -13,3 +25,12 @@ h1
 	font-size: 120px
 	line-height: 0.93
 	text-transform: uppercase
+
+.line-bg
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	+coverdiv
+	padding-top: 100vh
+
+.line-container
+	position: relative
