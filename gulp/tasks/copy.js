@@ -19,6 +19,12 @@ gulp.task('copy:rootfiles', function() {
         .pipe(gulp.dest(config.dest.root));
 });
 
+gulp.task('copy:animations', function() {
+  return gulp
+    .src(config.src.animations + '/*/*.js')
+    .pipe(gulp.dest(config.dest.animations));
+});
+
 gulp.task('copy:img', function() {
     return gulp
         .src([
@@ -30,7 +36,7 @@ gulp.task('copy:img', function() {
 
 gulp.task('copy', [
     'copy:img',
-    // 'copy:rootfiles',
+    'copy:animations',
     // 'copy:lib',
     'copy:fonts'
 ]);
