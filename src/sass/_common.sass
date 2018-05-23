@@ -25,12 +25,33 @@ h1
 	font-size: 120px
 	line-height: 0.93
 	text-transform: uppercase
+	+r(1100)
+		font-size: 80px
+	+md
+		font-size: 48px
+	+xs
+		font-size: 40px
 
 .line-bg
+	background-image: url('../img/line.png')
 	background-repeat: no-repeat
 	background-size: 100% 100%
 	+coverdiv
 	padding-top: 100vh
+	+xs
+		z-index: 1
+		background-image: url('../img/line2.png')
+
 
 .line-container
 	position: relative
+
+.show-mob
+	display: none
+	+xs
+		display: block
+
+.hide-mob
+	display: block
+	+xs
+		display: none

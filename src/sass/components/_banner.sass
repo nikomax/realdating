@@ -3,13 +3,24 @@
 	background-size: cover
 	background-repeat: no-repeat
 	padding: 200px 50px
+	+md
+		padding: 54px 20px 58px
+	+xs
+		padding: 99px 20px 131px
+		background-position: right
 	&__content
 		max-width: 740px
 		margin: 0 auto
+		+md
+			max-width: 327px
 	&__text
 		margin-bottom: 70px
 		font-size: 36px
 		+bold
+		+md
+			font-size: 20px
+		+xs
+			font-size: 16px
 		.italic
 			+italic
 	&__image

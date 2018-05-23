@@ -18,7 +18,8 @@
       <header class="header">
         <div class="header__content">
           <div class="header__logo"> <a href="/" class="logo">
-        <img src="img/logo.png" alt="">
+        <img class="hide-mob" src="img/logo.png" alt="">
+        <img class="show-mob" src="img/logo-rose.png" alt="">
       </a> </div>
           <div class="header__burger">
             <div class="burger js-burger"> <span></span> <span></span> <span></span> </div>
@@ -54,19 +55,20 @@
         </div>
       </header>
       <div class="line-container">
-        <div class="line-bg" style="background-image: url('img/line.png')"></div>
+        <div class="line-bg"></div>
         <div class="hero" style="background-image: url('img/hero.jpg')">
           <div class="hero__content">
             <h1 class="hero__title"> Вернем ценность общению </h1>
             <div class="hero__btns"> <a href="#" class="btn">Скачать</a> <a href="#" class="appstore-btn"></a> </div>
           </div>
+          <div class="hero__gradient show-mob"></div>
         </div>
         <div class="main">
           <div class="main-item">
             <div class="main-item__col">
               <script src="animation/1-img/test.js"></script>
-              <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1008px; height:1008px"> <canvas id="canvas" width="1008" height="1008" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1008px; height:1008px; position: absolute; left: 0px; top: 0px; display: block;">
+              <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1008px; height:1008px;"> <canvas id="canvas" style=" display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height:auto; position: absolute; left: 0px; top: 0px; display: block;">
                 </div>
               </div>
             </div>
@@ -87,7 +89,7 @@
             </div>
             <div class="main-item__col">
               <script src="animation/2-img/test_3.js"></script>
-              <div id="animation_container1" style="background-color:rgba(255, 255, 255, 0.00); width:1200px; height:950px"> <canvas id="canvas1" width="1200" height="950" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+              <div id="animation_container1" style="background-color:rgba(255, 255, 255, 0.00);"> <canvas id="canvas1" style="display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
                 <div id="dom_overlay_container1" style="pointer-events:none; overflow:hidden; width:1200px; height:950px; position: absolute; left: 0px; top: 0px; display: block;">
                 </div>
               </div>
@@ -96,7 +98,7 @@
           <div class="main-item">
             <div class="main-item__col">
               <script src="animation/3-img/test2_4_to_check.js"></script>
-              <div id="animation_container2" style="background-color:rgba(255, 255, 255, 0.00); width:900px; height:750px"> <canvas id="canvas2" width="900" height="750" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+              <div id="animation_container2" style="background-color:rgba(255, 255, 255, 0.00);"> <canvas id="canvas2" style=" display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
                 <div id="dom_overlay_container2" style="pointer-events:none; overflow:hidden; width:900px; height:750px; position: absolute; left: 0px; top: 0px; display: block;">
                 </div>
               </div>
@@ -124,12 +126,13 @@
             <p>Вы получаете приятный бонус за общение в виде денежного вознаграждения.</p>
             <p>Не тратьте своё время впустую!</p>
           </div>
-          <div class="banner__image">
-            <script src="animation/3-img/test2_4_to_check.js"></script>
-            <div id="animation_container3" style="background-color:rgba(255, 255, 255, 0.00); width:700px; height:500px"> <canvas id="canvas3" width="700" height="500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-              <div id="dom_overlay_container3" style="pointer-events:none; overflow:hidden; width:700px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
-              </div>
-            </div>
+          <div class="banner__image"> <img src="img/app.png" alt="">
+            <!--<script src="animation/3-img/test2_4_to_check.js"></script>-->
+            <!--<div id="animation_container3" style="background-color:rgba(255, 255, 255, 0.00); width:700px; height:500px">-->
+            <!--<canvas id="canvas3" width="700" height="500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>-->
+            <!--<div id="dom_overlay_container3" style="pointer-events:none; overflow:hidden; width:700px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">-->
+            <!--</div>-->
+            <!--</div>-->
           </div>
         </div>
       </div>
