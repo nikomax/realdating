@@ -1,4 +1,5 @@
 .hero
+	background-image: url('../img/hero.jpg')
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
@@ -15,6 +16,8 @@
 		height: 400px
 		padding: 0
 		position: relative
+	+r(425)
+		background-image: url('../img/hero-mob.jpg')
 	&__content
 		max-width: 620px
 		z-index: 5
