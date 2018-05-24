@@ -3,7 +3,7 @@
 	+coverdiv
 	min-height: 100vh
 	background-color: #f53e4f
-	overflow-y: scroll
+	overflow-y: auto
 	transition: ease-in-out 0.5s
 	padding: 0 40px
 	display: flex
@@ -14,14 +14,14 @@
 	&.is-open
 		transform: translate(0)
 	&__content
-		max-width: 875px
+		//max-width: 875px
 		color: #ffffff
 		text-align: center
 		padding: 120px 0
 		margin: auto
 		+md
 			padding: 100px 0 50px
-	&__title
+	&__nav
 		font-size: 73px
 		text-transform: uppercase
 		+semi
@@ -34,6 +34,9 @@
 			font-size: 18px
 			margin-bottom: 70px
 			padding: 0 30px
+		a
+			display: block
+			margin-bottom: 5px
 	&__download
 		font-size: 13px
 		margin-bottom: 59px
