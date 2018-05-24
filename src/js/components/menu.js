@@ -6,11 +6,13 @@ function menu(burger) {
     $('.js-menu').removeClass('is-open');
     $('.out').removeClass('is-hidden');
     $('.header__logo').find('.js-mob-logo').attr('src', defaultSrc);
+    $('.header__content').removeClass('menu-open');
   } else {
     $(burger).addClass('is-active');
     $('.js-menu').addClass('is-open');
     $('.out').addClass('is-hidden');
     $('.header__logo').find('.js-mob-logo').attr('src', menuSrc);
+    $('.header__content').addClass('menu-open');
   }
 }
 $('.js-burger').on('click', function() {
