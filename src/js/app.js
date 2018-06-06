@@ -2,7 +2,14 @@ import './components/menu';
 import firstAnimation from './components/test';
 import secondAnimation from './components/test_3';
 import thirdAnimation from './components/test2_4_to_check';
-import fourthAnimation from './components/test_4-script_test';
+import fourthAnimation from './components/test_4-script_test_2';
+import AOS from 'aos';
+
+$(document).ready(function() {
+  AOS.init({
+    duration: 1000,
+  });
+});
 
 secondAnimation();
 

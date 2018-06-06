@@ -4,13 +4,13 @@ function menu(burger) {
   if ($(burger).hasClass('is-active')) {
     $(burger).removeClass('is-active');
     $('.js-menu').removeClass('is-open');
-    $('.header__content').removeClass('menu-open');
+    // $('.header__content').removeClass('menu-open');
     $('.out').removeClass('is-hidden');
     $('.header__logo').find('.js-mob-logo').attr('src', defaultSrc);
   } else {
     $(burger).addClass('is-active');
     $('.js-menu').addClass('is-open');
-    $('.header__content').addClass('menu-open');
+    // $('.header__content').addClass('menu-open');
     $('.out').addClass('is-hidden');
     $('.header__logo').find('.js-mob-logo').attr('src', menuSrc);
   }
